@@ -1,9 +1,10 @@
 footer {
   position: relative;
   width: 100%;
-  padding: 10px 10vw;
+  padding: 2em 10vw;
   padding-bottom: 10px;
-  background: lightgray;
+  background: var(--primary);
+  color: #fff;
 }
 .footer-content {
   display: grid;
@@ -16,7 +17,6 @@ footer {
 .footer--right {
   width: 100%;
   max-width: 40vw;
-  background-color: red;
 }
 
 .footer-ul-container {
@@ -25,10 +25,11 @@ footer {
   justify-content: space-between;
 }
 .category {
-  width: 200px;
-  display: grid;
+  /* width: 200px; */
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+  list-style: none; */
   list-style: none;
 }
 .category-title {
@@ -84,16 +85,17 @@ footer {
   border-radius: 10px;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
 }
 .btn--footer {
   padding: 10px 1em;
   border-radius: 10px;
   border: none;
   outline: none;
-  background-color: #383838;
-  color: #fff;
+  background-color: var(--accent);
+  color: #ffffff;
   width: 100%;
-  margin-top: 1em;
+  /* margin-top: 1em; */
 }
 
 /* #endregion FORM SECTION */

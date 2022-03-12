@@ -5,14 +5,21 @@
     <title>My Fashion Store</title>
 
     <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="css/footer.css"
-      type="text/css"
-      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
   </head>
 
   <body>
@@ -27,7 +34,9 @@
               autofocus
               placeholder="Whats your style"
             />
-            <button class="search-button">Search</button>
+            <button class="search-button">
+              <span class="fa fa-search"></span>
+            </button>
           </div>
           <a href="#" class="nav-user-icon"
             ><i class="fa-solid fa-user" aria-hidden="true"></i
@@ -39,138 +48,41 @@
       </div>
       <ul class="links-container">
         <li class="links-item"><a href="#" class="link">Home</a></li>
-        <li class="links-item"><a href="#" class="link">Women</a></li>
-        <li class="links-item"><a href="#" class="link">Men</a></li>
-        <li class="links-item"><a href="#" class="link">Kids</a></li>
-        <li class="links-item"><a href="#" class="link">Accessories</a></li>
-        <li class="links-item"><a href="#" class="link">Fashion</a></li>
-        <li class="links-item"><a href="#" class="link">Shoes</a></li>
+        <li class="links-item">
+          <a href="#women-container-target" class="link">Women</a>
+        </li>
+        <li class="links-item">
+          <a href="#men-container-target" class="link">Men</a>
+        </li>
+        <li class="links-item">
+          <a href="#kids-container-target" class="link">Kids</a>
+        </li>
+        <li class="links-item">
+          <a href="#accessories-container-target" class="link">Accessories</a>
+        </li>
+        <li class="links-item">
+          <a href="#shoes-container-target" class="link">Shoes</a>
+        </li>
+        <li class="links-item"><a href="#about" class="link">About Us</a></li>
       </ul>
     </nav>
 
     <header class="header-section">
+      <video class="header-video" autoplay loop mute>
+        <source
+          src="https://firebasestorage.googleapis.com/v0/b/bzntech-functions.appspot.com/o/production%20ID_3917742.mp4?alt=media&token=7a7a8a39-d904-451f-a742-343e19f38683"
+          type="video/mp4"
+        />
+      </video>
       <div class="content">
-        <p class="sub-heading">Your choice your style</p>
+        <p class="collection-title">Your choice your style</p>
       </div>
     </header>
 
-    <section class="video">
-      <video width="600" contols>
-        <source src="img/HTML5 Form Features.mp4" autoplay type="video/mp4" />
-      </video>
-      <video width="600" contols>
-        <source src="img/HTML5 Layout Tags.mp4" autoplay type="video/mp4" />
-      </video>
-    </section>
-
     <section class="product">
+      <div class="target" id="big-sale-container-target"></div>
       <h2 class="product-category">Big Sale</h2>
-      <div class="product-container">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card7.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card6.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card5.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card4.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card3.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card2.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card1.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card8.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-      </div>
+      <div class="product-container" id="big-sale-container"></div>
     </section>
 
     <section class="collection-container">
@@ -201,224 +113,57 @@
     </section>
 
     <section class="product">
+      <div class="target" id="new-arrival-container-target"></div>
       <h2 class="product-category">New Arrivals</h2>
-      <div class="product-container">
-        <div class="product-card">
-          <div class="product-image">
-            <img src="img/card7.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card6.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card5.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card4.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card3.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card2.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card1.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card8.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-      </div>
+      <div class="product-container" id="new-arrival-container"></div>
     </section>
 
     <section class="product">
-      <h2 class="product-category">Treding</h2>
-      <div class="product-container">
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card7.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card6.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card5.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card4.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card3.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card2.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card1.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">13% Off</span>
-            <img src="img/card8.jpg" class="product-thumb" alt="" />
-            <button class="card-button">add to wishlist</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-des">description</p>
-            <span class="price">R217.00</span
-            ><span class="actual-price">R250.00</span>
-          </div>
-        </div>
-      </div>
+      <div class="target" id="trending-container-target"></div>
+      <h2 class="product-category">Trending</h2>
+      <div class="product-container" id="trending-container"></div>
     </section>
 
+    <section class="bridge-section">
+      <video class="bridge-video" autoplay loop mute>
+        <source
+          src="https://firebasestorage.googleapis.com/v0/b/bzntech-functions.appspot.com/o/pexels-karolina-grabowska-7953981.mp4?alt=media&token=970c40b3-4521-419f-a948-b535f435a3c2"
+          type="video/mp4"
+        />
+      </video>
+    </section>
+
+    <section class="product">
+      <div class="target" id="women-container-target"></div>
+      <h2 class="product-category">Women</h2>
+      <div class="product-container" id="women-container"></div>
+    </section>
+
+    <section class="product">
+      <div class="target" id="men-container-target"></div>
+      <h2 class="product-category">Men</h2>
+      <div class="product-container" id="men-container"></div>
+    </section>
+
+    <section class="product">
+      <div class="target" id="kids-container-target"></div>
+      <h2 class="product-category">Kids</h2>
+      <div class="product-container" id="kids-container"></div>
+    </section>
+
+    <section class="product">
+      <div class="target" id="accessories-container-target"></div>
+      <h2 class="product-category">Accessories</h2>
+      <div class="product-container" id="accessories-container"></div>
+    </section>
+
+    <section class="product">
+      <div class="target" id="shoes-container-target"></div>
+      <h2 class="product-category">Shoes</h2>
+      <div class="product-container" id="shoes-container"></div>
+    </section>
+
+    <!-- #region Footer Section -->
     <footer>
       <div class="footer-content">
         <div class="footer--left">
@@ -471,7 +216,7 @@
               <li><a href="#" class="footer-link">Jackets</a></li>
             </ul>
           </div>
-          <div clss="about-section">
+          <div clss="about-section" id="about">
             <p class="footer-title">About Us</p>
             <p class="info">
               We are a very huge great team, working together to make your life
@@ -531,5 +276,9 @@
         </div>
       </div>
     </footer>
+    <!-- #endregion Footer Section -->
+
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
